@@ -9,13 +9,14 @@
 sudo pacman -R yarn nodejs nvm
 sudo npm install -g n
 sudo mkdir -p /usr/local/n /usr/local/bin /usr/local/lib /usr/local/include /usr/local/share
-sudo chown -R $(whoami) /usr/local/n /usr/local/bin /usr/local/lib /usr/local/include /usr/local/share
+sudo chown -R $(whoami) /usr/local/n /usr/local/bin /usr/local/lib /usr/local/include /usr/local/share /usr/local/share/man
 n latest
 node -v
 corepack enable
 yarn set version stable
 yarn -v
 ```
+
 ### New Vue Project
 
 - Name of Project: welcome
