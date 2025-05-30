@@ -1,4 +1,3 @@
-
 const CourseChecklist = {
   template: `
   <div>The course checklist: {{list.join(', ')}}</div>
@@ -32,11 +31,12 @@ const CourseChecklist = {
   </label>
   </div>
   `,
+
   data() {
     return {
-    list: [],
+      list: []
     }
   }
-};
+}
 
-export default CourseChecklist;
+export default CourseChecklist

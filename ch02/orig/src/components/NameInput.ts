@@ -8,11 +8,12 @@ export const NameInput = {
     id="name"
     >
   </label>`,
+
   data() {
     return {
-    name: '',
+      name: ''
     }
   }
 }
 
-export default NameInput;
+export default NameInput
