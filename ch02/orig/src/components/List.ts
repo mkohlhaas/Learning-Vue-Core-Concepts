@@ -1,12 +1,12 @@
-export const List={
+export const List = {
   template: `
   <ul>
     <li v-for="number in numbers" :key="number">{{number}}</li>
-  </ul>
-  `,
+  </ul>`,
+
   data() {
-    return{
+    return {
       numbers: [1, 2, 3, 4, 5]
-    };
+    }
   }
- };
+}
