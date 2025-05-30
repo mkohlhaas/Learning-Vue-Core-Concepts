@@ -1,6 +1,7 @@
 const CourseChecklist = {
   template: `
   <div>The course checklist: {{list.join(', ')}}</div>
+
   <div>
   <label for="chapter1">
     <input 
@@ -11,6 +12,7 @@ const CourseChecklist = {
     >
     Chapter 1
   </label>
+
   <label for="chapter2">
     <input 
     v-model="list"
@@ -20,6 +22,7 @@ const CourseChecklist = {
     >
     Chapter 2
   </label>
+
   <label for="chapter3">
     <input 
     v-model="list"

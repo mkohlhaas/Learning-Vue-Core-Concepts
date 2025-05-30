@@ -1,25 +1,12 @@
 import { createApp, type ComponentOptions } from 'vue'
-import CourseChecklist from './components/CourseChecklist'
 import NameInput from './components/NameInput'
+import CourseChecklist from './components/CourseChecklist'
+
 import type { Data } from './types/Data.type'
 
 {
-    const Description = {
-        template: "This is the app's entrance"
-    }
-
     const App1 = {
-        // template: '<Description />'
-        // template: "This is the app's entrance",
-        // template: "<div>This is the app's entrance</div>",
-        template: `
-    <h1>This is the app's entrance</h1>
-    <h2>We are exploring template syntax</h2>
-    `,
-        render() {
-            return "This is the app's entrance"
-        },
-        components: { Description }
+        template: "I. This is the app's entrance"
     }
 
     const app1 = createApp(App1)
@@ -27,17 +14,13 @@ import type { Data } from './types/Data.type'
 }
 
 {
+    const Description = {
+        template: "II. This is the app's entrance"
+    }
+
     const App2 = {
-        template: `
-    <div>Title: {{ title }}</div>`,
-        data() {
-            return {
-                title: 'My first Vue component'
-            }
-        },
-        created() {
-            console.log((this as ComponentOptions<Data>).title)
-        }
+        template: '<Description />',
+        components: { Description }
     }
 
     const app2 = createApp(App2)
@@ -45,22 +28,9 @@ import type { Data } from './types/Data.type'
 }
 
 {
-    /* How reactivity works */
     const App3 = {
-        data() {
-            return {
-                counter: 1
-            }
-        },
-        template: `<div>Counting to ten: {{ counter }}</div>`,
-        created() {
-            const interval = setInterval(() => {
-                this.counter++
-            }, 1000)
-
-            setTimeout(() => {
-                clearInterval(interval)
-            }, 10000)
+        render() {
+            return "III. This is the app's entrance"
         }
     }
 
@@ -69,10 +39,16 @@ import type { Data } from './types/Data.type'
 }
 
 {
-    /* Two way binding */
     const App4 = {
-        components: { NameInput },
-        template: '<NameInput />'
+        template: `<div>Title: {{ title }} </div>`,
+        data() {
+            return {
+                title: 'My first Vue component!'
+            }
+        },
+        created() {
+            console.log((this as ComponentOptions<Data>).title)
+        }
     }
 
     const app4 = createApp(App4)
@@ -80,11 +56,47 @@ import type { Data } from './types/Data.type'
 }
 
 {
+    // How reactivity works
+
     const App5 = {
-        components: { CourseChecklist },
-        template: '<CourseChecklist />'
+        template: `<div>Counting: {{ counter }}</div>`,
+        data() {
+            return {
+                counter: 1
+            }
+        },
+        created() {
+            const interval = setInterval(() => {
+                this.counter++
+            }, 1000)
+
+            setTimeout(() => {
+                clearInterval(interval)
+            }, 9000)
+        }
     }
 
     const app5 = createApp(App5)
     app5.mount('#app5')
+}
+
+{
+    /* Two way binding */
+    const App6 = {
+        template: '<NameInput />',
+        components: { NameInput }
+    }
+
+    const app6 = createApp(App6)
+    app6.mount('#app6')
+}
+
+{
+    const App7 = {
+        components: { CourseChecklist },
+        template: '<CourseChecklist />'
+    }
+
+    const app7 = createApp(App7)
+    app7.mount('#app7')
 }

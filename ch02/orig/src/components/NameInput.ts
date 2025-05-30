@@ -5,8 +5,7 @@ export const NameInput = {
     <input 
     v-model.lazy="name"
     placeholder="Enter your name" 
-    id="name"
-    >
+    id="name">
   </label>`,
 
   data() {
