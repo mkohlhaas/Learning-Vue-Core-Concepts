@@ -8,8 +8,7 @@ const CourseChecklist = {
     v-model="list"
     type="checkbox"
     value="chapter01"
-    id="chapter1"
-    >
+    id="chapter1">
     Chapter 1
   </label>
 
@@ -18,8 +17,7 @@ const CourseChecklist = {
     v-model="list"
     type="checkbox"
     value="chapter02"
-    id="chapter2"
-    >
+    id="chapter2">
     Chapter 2
   </label>
 
@@ -28,8 +26,7 @@ const CourseChecklist = {
     v-model="list"
     type="checkbox"
     value="chapter03"
-    id="chapter3"
-    >
+    id="chapter3">
     Chapter 3
   </label>
   </div>
