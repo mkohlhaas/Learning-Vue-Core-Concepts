@@ -2,11 +2,12 @@
  <h2 class="heading">I am a a Vue component</h2>
  <h2 class="heading">{{ message }}</h2>
 </template>
+
 <script lang="ts">
 import { defineComponent } from 'vue'
 
 export default defineComponent({
- name: 'MyFistComponent',
+ name: 'MyFirstComponent',
  data() {
   return {
    message: 'Hello Vue!',
@@ -21,6 +22,7 @@ export default defineComponent({
  }
 })
 </script>
+
 <style>
 .heading {
  font-size: 16px;

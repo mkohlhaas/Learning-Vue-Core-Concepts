@@ -28,6 +28,7 @@
     </ListLayout>
   </div>
 </template>
+
 <script>
 import ListLayout from './ListLayout.vue'
 import { defineComponent } from 'vue'

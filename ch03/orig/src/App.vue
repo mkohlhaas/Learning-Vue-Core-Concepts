@@ -23,8 +23,9 @@ export default defineComponent({
   }
 })
 </script>
+
 <template>
-  <!-- <my-first-component /> -->
+  <my-first-component />
   <MyFirstComponent />
   <StaticMessage />
   <ReversedMessage />
