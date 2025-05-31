@@ -5,30 +5,31 @@
   <button @click="makeReservation">Make a reservation</button>
   <button @click="acceptPayment">Accept a payment</button>
 </template>
+
 <script lang="ts">
-import { defineComponent } from "vue";
-import { restaurantMixin } from "@/mixins/restaurantMixin";
+import { defineComponent } from 'vue'
+import { restaurantMixin } from '@/mixins/restaurantMixin'
 
 export default defineComponent({
-  name: "DiningComponent",
+  name: 'DiningComponent',
   mixins: [restaurantMixin],
   data() {
     return {
-      title: "Dining",
+      title: 'Dining',
       menu: [
-        { id: "menu01", name: "Steak" },
-        { id: "menu02", name: "Salad" },
-        { id: "menu03", name: "Pizza" },
-      ],
-    };
+        { id: 'menu01', name: 'Steak' },
+        { id: 'menu02', name: 'Salad' },
+        { id: 'menu03', name: 'Pizza' }
+      ]
+    }
   },
   methods: {
     getDressCode() {
-      console.log("Dress code: Casual");
-    },
+      console.log('Dress code: Casual')
+    }
   },
   created() {
-    console.log("DiningComponent component created!");
-  },
-});
+    console.log('DiningComponent component created!')
+  }
+})
 </script>

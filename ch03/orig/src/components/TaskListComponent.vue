@@ -8,28 +8,28 @@
   </div>
 </template>
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: "TaskListComponent",
+  name: 'TaskListComponent',
   data() {
     return {
       tasks: [
         {
-          id: "task01",
-          description: "Buy groceries",
+          id: 'task01',
+          description: 'Buy groceries'
         },
         {
-          id: "task02",
-          description: "Do laundry",
+          id: 'task02',
+          description: 'Do laundry'
         },
         {
-          id: "task03",
-          description: "Watch Moonknight",
-        },
+          id: 'task03',
+          description: 'Watch Moonknight'
+        }
       ],
       title: 'Task'
-    };
-  },
-});
+    }
+  }
+})
 </script>

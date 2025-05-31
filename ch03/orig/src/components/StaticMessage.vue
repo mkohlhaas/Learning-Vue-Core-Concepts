@@ -18,8 +18,8 @@ const message = 'Welcome to Vue 3!'
   <h1>{{ message }}</h1>
 </template> -->
 
-<script lang='ts'>
-import { defineComponent, h } from 'vue';
+<script lang="ts">
+import { defineComponent, h } from 'vue'
 
 export default defineComponent({
   setup() {

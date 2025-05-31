@@ -12,13 +12,8 @@
     </ListLayout> -->
     <ListLayout>
       <template #thumbnail="{ item }">
-        <img
-          v-if="item.thumbnail"
-          class="list-layout__item__thumbnail"
-          :src="item.thumbnail"
-          :alt="item.name"
-          width="200"
-        />
+        <img v-if="item.thumbnail" class="list-layout__item__thumbnail" :src="item.thumbnail" :alt="item.name"
+          width="200" />
       </template>
       <template #main="{ item, price }">
         <div class="list-layout__item__name">{{ item.name }}</div>
@@ -34,16 +29,16 @@
   </div>
 </template>
 <script>
-import ListLayout from "./ListLayout.vue";
-import { defineComponent } from "vue";
+import ListLayout from './ListLayout.vue'
+import { defineComponent } from 'vue'
 
 export default defineComponent({
-  name: "ProductItemList",
+  name: 'ProductItemList',
   components: [ListLayout],
   data() {
     return {
-      price: 100,
-    };
-  },
-});
+      price: 100
+    }
+  }
+})
 </script>
