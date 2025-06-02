@@ -1,18 +1,22 @@
 <template>
-  <ul>
-    <li v-for="item in items" :key="item.id">
-      <!-- <slot :item="item">
-        <div class="list-layout__item__name">{{ item.name }}</div>
-        <div class="list-layout__item__description">{{ item.description }}</div>
-      </slot> -->
-      <slot name="thumbnail" :item="item" />
-      <slot name="main" :item="item">
-        <div>{{ item.name }}</div>
-        <div>{{ item.description }}</div>
-      </slot>
-      <slot name="actions" :item="item" />
-    </li>
-  </ul>
+  <div>
+    <h5>List Layout</h5>
+    <ul>
+      <li v-for="item in items" :key="item.id">
+        <!-- <slot :item="item"> -->
+        <!--   <div>{{ item.name }}</div> -->
+        <!--   <div>{{ item.description }}</div> -->
+        <!-- </slot> -->
+
+        <slot name="thumbnail" :item="item" />
+        <slot name="main" :item="item">
+          <div>{{ item.name }}</div>
+          <div>{{ item.description }}</div>
+        </slot>
+        <slot name="actions" :item="item" />
+      </li>
+    </ul>
+  </div>
 </template>
 
 <script lang="ts">

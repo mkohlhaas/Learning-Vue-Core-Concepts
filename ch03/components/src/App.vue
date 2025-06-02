@@ -7,7 +7,7 @@
   <StaticMessage />
   <ReversedMessage />
   <UserWatcherComponent />
-  <ListLayout />
+  <ProductItemList />
 </template>
 
 <script lang="ts">
@@ -18,7 +18,7 @@ import MyFirstComponentWithHooks from "./components/MyFirstComponentWithHooks.vu
 import StaticMessage from "./components/StaticMessage.vue";
 import ReversedMessage from "./components/ReversedMessage.vue";
 import UserWatcherComponent from "./components/UserWatcherComponent.vue";
-import ListLayout from "./components/ListLayout.vue";
+import ProductItemList from "./components/ProductItemList.vue";
 
 export default defineComponent({
   components: {
@@ -27,7 +27,7 @@ export default defineComponent({
     StaticMessage,
     ReversedMessage,
     UserWatcherComponent,
-    ListLayout,
+    ProductItemList,
   },
 });
 </script>

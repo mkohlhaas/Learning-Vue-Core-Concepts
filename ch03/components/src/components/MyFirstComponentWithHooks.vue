@@ -1,6 +1,9 @@
 <template>
-  <h2 class="heading">I am {{ message }}</h2>
-  <input v-model="message" type="text" placeholder="Enter your name" />
+  <div>
+    <h5>My First Component with Hooks</h5>
+    <h2>I am {{ message }}</h2>
+    <input v-model="message" type="text" placeholder="Enter your name" />
+  </div>
 </template>
 
 <script lang="ts">

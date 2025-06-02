@@ -17,7 +17,10 @@ const message = "Welcome to Vue 3!";
 </script>
 
 <template>
-  <h3>{{ message }}</h3>
+  <div>
+    <h5>Static Message</h5>
+    <h3>{{ message }}</h3>
+  </div>
 </template>
 
 <!-- <script lang="ts"> -->
